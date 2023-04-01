@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Hero() {
+export default function Start() {
   return (
-    <section className="w-full bg-[#FFFAF6]">
+    <section className="w-full bg-[#FEE6BF]">
       <div className="relative">
         <div className="flex flex-wrap">
           <div className="w-6/12"></div>
@@ -11,7 +11,7 @@ export default function Hero() {
             <div>
               <Image
                 priority
-                src="/images/home/hero/hero-illust.png"
+                src="/images/home/start/start-illust.png"
                 height="1080"
                 width="1080"
                 alt=""
@@ -25,13 +25,19 @@ export default function Hero() {
             <div className="-mx-4 flex h-full flex-wrap">
               <div className="w-6/12 px-4">
                 <div className="flex h-full flex-col items-start justify-center">
-                  <h1 className="mb-8 text-6xl font-semibold text-[#000000]">
-                    Buat Merk Kosmetik kamu sendiri? Bisa Banget!
+                  <div className="mb-4">
+                    <Image
+                      priority
+                      src="/images/shun-logo.png"
+                      height="480"
+                      width="480"
+                      alt=""
+                      className="h-12 w-auto"
+                    />
+                  </div>
+                  <h1 className="mb-8 text-4xl font-semibold text-[#000000]">
+                    Mulai produksi merekmu sekarang!
                   </h1>
-                  <p className="mb-4 text-base font-normal text-[#000000] opacity-50">
-                    Dengan modal kecil, produksi cepat, perizinan diurusin
-                    sampai tuntas!
-                  </p>
                   <Link
                     href="/"
                     className="mb-2 min-w-[140px] rounded bg-[#B4081D] px-4 py-2.5 text-base font-medium text-[#FFFFFF]"
@@ -41,15 +47,10 @@ export default function Hero() {
                 </div>
               </div>
               <div className="w-6/12 px-4">
-                <div className="h-full w-full border-r border-[#FFFAF6]"></div>
+                <div className="h-full w-full border-l border-[#FFFAF6]"></div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div>
-        <div className="container mx-auto max-w-6xl px-4 py-16">
-          <div className="w-full border border-[#DFC2A3]"></div>
         </div>
       </div>
     </section>

@@ -35,17 +35,17 @@ export default function Brand() {
         <p className="mb-4 text-center text-base font-normal text-[#000000]">
           Brand yang sudah Maklon di SHUN Beauty
         </p>
-        <div className="-mx-2 flex flex-wrap items-center justify-between">
+        <div className="-mx-4 flex flex-wrap items-center justify-between">
           {brands.map((item, index) => {
             return (
-              <div className="px-2 pb-4" key={index}>
+              <div className="px-4 pb-4" key={index}>
                 <Image
                   priority
                   src={`/images/home/brand/${item.image}`}
                   height="480"
                   width="480"
                   alt=""
-                  className="h-16 w-16 object-contain"
+                  className="h-24 w-24 object-contain"
                 />
               </div>
             );
