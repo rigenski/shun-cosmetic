@@ -39,7 +39,7 @@ export default function Excellence() {
     <section className="w-full bg-[#FFEED3]">
       <div className="container mx-auto h-full max-w-6xl px-4 py-16">
         <div className="mb-8 flex justify-center">
-          <h2 className="text-4xl font-semibold text-[#000000]">
+          <h2 className="text-2xl font-semibold text-[#000000] lg:text-4xl">
             Mengapa Memilih Kami?
           </h2>
         </div>
@@ -48,7 +48,9 @@ export default function Excellence() {
             return (
               <div
                 className={`mb-4 px-4 ${
-                  excellences.length > index + 1 ? "w-6/12" : "w-full"
+                  excellences.length - 1 !== index
+                    ? "w-full md:w-6/12"
+                    : "w-full"
                 }`}
                 key={index}
               >
@@ -60,14 +62,14 @@ export default function Excellence() {
                       height="480"
                       width="480"
                       alt=""
-                      className="h-10 min-h-[40px] w-10 min-w-[40px]"
+                      className="h-8 min-h-[32px] w-8 min-w-[32px] md:h-10 md:min-h-[40px] md:w-10 md:min-w-[40px]"
                     />
                   </div>
                   <div>
-                    <h4 className="mb-2 text-2xl font-semibold text-[#000000]">
+                    <h4 className="mb-2 text-lg font-semibold text-[#000000] lg:text-2xl">
                       {item.title}
                     </h4>
-                    <p className="text-base font-normal text-[#000000]">
+                    <p className="text-sm font-normal text-[#000000] lg:text-base">
                       {item.description}
                     </p>
                   </div>

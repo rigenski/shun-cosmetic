@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main>
+      <main className="pt-[56px] md:h-[64px]">
         <Hero />
         <Excellence />
         <Brand />

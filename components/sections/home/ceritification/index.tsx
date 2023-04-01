@@ -39,7 +39,7 @@ export default function Certification() {
         <div className="absolute top-0 h-[640px] w-full">
           <div className="container mx-auto h-full max-w-6xl px-4 py-16">
             <div className="flex h-full flex-col items-start justify-center">
-              <h2 className="mb-4 text-4xl font-semibold text-[#000000]">
+              <h2 className="mb-4 text-2xl font-semibold text-[#000000] md:text-4xl">
                 Sertifikasi
               </h2>
               <ul className="mb-4">
@@ -54,14 +54,14 @@ export default function Certification() {
                             height="480"
                             width="480"
                             alt=""
-                            className="h-16 w-16"
+                            className="h-12 w-12 md:h-16 md:w-16"
                           />
                         </div>
                         <div>
-                          <h4 className="text-lg font-semibold text-[#000000]">
+                          <h4 className="text-base font-semibold text-[#000000] md:text-lg">
                             {item.title}
                           </h4>
-                          <h4 className="text-base font-normal text-[#000000]">
+                          <h4 className="text-sm font-normal text-[#000000] md:text-base">
                             {item.description}
                           </h4>
                         </div>

@@ -44,14 +44,14 @@ export default function Product() {
         <div className="absolute top-0 h-[640px] w-full">
           <div className="container mx-auto h-full max-w-6xl px-4 py-16">
             <div className="flex h-full flex-col items-end justify-center">
-              <h2 className="mb-4 text-4xl font-semibold text-[#000000]">
+              <h2 className="mb-4 text-end text-2xl font-semibold text-[#000000] md:text-4xl">
                 Produk yang bisa diproduksi
               </h2>
               <ul className="mb-4">
                 {products.map((item, index) => {
                   return (
                     <li className="mb-2" key={index}>
-                      <p className="text-end text-lg font-medium text-[#000000]">
+                      <p className="text-end text-base font-medium text-[#000000] md:text-lg">
                         {item.title}
                       </p>
                     </li>
