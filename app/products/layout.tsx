@@ -7,8 +7,8 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  title: "Shun Cosmetic - Homepage",
-  description: "Hompage",
+  title: "Shun Cosmetic - List Produk",
+  description: "List Produk",
 };
 
 export default function RootLayout({

@@ -42,7 +42,7 @@ export default function Start() {
                   </h1>
                   <Link
                     href="/"
-                    className="mb-2 min-w-[140px] rounded bg-[#B4081D] px-4 py-2.5 text-base font-medium text-[#FFFFFF]"
+                    className="mb-2 min-w-[140px] rounded bg-[#B4081D] px-4 py-2.5 text-center text-base font-medium text-[#FFFFFF]"
                   >
                     Hubungi Kami
                   </Link>
