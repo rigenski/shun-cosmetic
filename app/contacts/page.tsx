@@ -1,6 +1,7 @@
 import Header from "@/components/layouts/header";
 import Contact from "@/components/sections/contacts/contact";
 import Hero from "@/components/sections/contacts/hero";
+import Map from "@/components/sections/contacts/map";
 
 const contacts = [
   {
@@ -28,6 +29,7 @@ export default function Home() {
         {contacts.map((item, index) => {
           return <Contact items={item} index={index} key={index} />;
         })}
+        <Map />
       </main>
     </>
   );

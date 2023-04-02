@@ -6,19 +6,21 @@ import Link from "next/link";
 const menus = [
   {
     title: "List Produk",
-    url: "/products",
+    url: "products",
   },
   {
     title: "Tata Cara Maklon",
-    url: "/procedures",
+    url: "procedures",
   },
   {
     title: "Hubungi Kami",
-    url: "/contacts",
+    url: "contacts",
   },
 ];
 
 export default function Header() {
+  const pathname = location.pathname.split("/")[1];
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -44,7 +46,7 @@ export default function Header() {
               return (
                 <li className="my-2 md:my-0" key={index}>
                   <Link
-                    href={item.url}
+                    href={`/${item.url}`}
                     className="text-[#000000 px-4 py-2 text-base font-normal"
                   >
                     {item.title}
