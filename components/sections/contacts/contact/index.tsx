@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Contact({ items, index }: any) {
+export default function Contact({ items, key: index }: any) {
   return (
     <section className={`w-full bg-[${items.background}]`} key={index}>
       <div className="relative">
