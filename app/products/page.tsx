@@ -101,7 +101,7 @@ const categories = [
     ],
     image: "parfume-illust.png",
     background: "#FFE4D6",
-    type: "horizontal",
+    type: "vertical",
   },
   {
     title: "Hair Care",
@@ -113,7 +113,7 @@ const categories = [
     ],
     image: "haircare-illust.png",
     background: "#FEF0E4",
-    type: "horizontal",
+    type: "vertical",
   },
 ];
 
@@ -123,9 +123,11 @@ export default function Home() {
       <Header />
       <main className="pt-[56px] md:pt-[64px]">
         <Hero />
-        {categories.map((item, index) => {
-          return <Category items={item} index={index} key={index} />;
-        })}
+        <div className="flex flex-wrap">
+          {categories.map((item, index) => {
+            return <Category items={item} index={index} key={index} />;
+          })}
+        </div>
         <Start />
       </main>
     </>
