@@ -26,7 +26,7 @@ export default function Home() {
       <main className="pt-[56px] md:pt-[64px]">
         <Hero />
         {contacts.map((item, index) => {
-          return <Contact items={item} key={index} />;
+          return <Contact items={item} index={index} key={index} />;
         })}
       </main>
     </>

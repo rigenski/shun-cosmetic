@@ -61,7 +61,7 @@ export default function Home() {
       <main className="pt-[56px] md:pt-[64px]">
         <Hero />
         {categories.map((item, index) => {
-          return <Procedure items={item} key={index} />;
+          return <Procedure items={item} index={index} key={index} />;
         })}
       </main>
     </>
