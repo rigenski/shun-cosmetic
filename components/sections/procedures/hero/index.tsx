@@ -44,10 +44,8 @@ export default function Hero() {
     <section className="w-full bg-[#FFFAF6]">
       <div className="relative">
         <div className="flex flex-wrap">
-          <div className="w-full md:w-6/12">
-            <div className="h-[480px] md:h-0"></div>
-          </div>
-          <div className="w-full md:w-6/12">
+          <div className="h-[480px] w-full md:h-[720px] md:w-6/12"></div>
+          <div className="h-[480px] w-full md:h-[720px] md:w-6/12">
             <div className="flex flex-wrap">
               {heroImages.map((item, index) => {
                 return (
@@ -58,7 +56,7 @@ export default function Hero() {
                       height="1080"
                       width="1080"
                       alt=""
-                      className="h-[240px] w-full object-cover md:h-[320px]"
+                      className="h-[240px] w-full object-cover md:h-[360px]"
                     />
                   </div>
                 );
@@ -66,10 +64,10 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <div className="absolute top-0 h-auto w-full md:h-[640px]">
-          <div className="container mx-auto h-full max-w-6xl px-4 py-16">
-            <div className="-mx-4 flex h-full flex-wrap">
-              <div className="w-full px-4 md:w-6/12">
+        <div className="absolute top-0 w-full">
+          <div className="container mx-auto max-w-6xl px-4">
+            <div className="-mx-4 flex flex-wrap">
+              <div className="h-[480px] w-full px-4 py-8 md:h-[720px] md:w-6/12 md:py-16">
                 <div className="flex h-full flex-col items-start justify-center">
                   <h1 className="mb-4 text-4xl font-semibold text-[#000000] md:mb-8 lg:text-6xl">
                     Tata Cara Maklon
@@ -88,8 +86,10 @@ export default function Hero() {
                   </ul>
                 </div>
               </div>
-              <div className="w-full px-4 md:w-6/12">
-                <div className="hidden h-full w-full rounded-tr-2xl rounded-bl-2xl border border-[#FFFFFF] md:block"></div>
+              <div className="h-[480px] w-full px-4 py-8 md:h-[720px] md:w-6/12 md:py-16">
+                <div className="h-full">
+                  <div className="h-full w-full rounded-tr-2xl rounded-bl-2xl border border-[#FFFFFF]"></div>
+                </div>
               </div>
             </div>
           </div>

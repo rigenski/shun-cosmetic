@@ -6,10 +6,8 @@ export default function Start() {
     <section className="w-full bg-[#FEE6BF]">
       <div className="relative">
         <div className="flex flex-wrap">
-          <div className="w-full md:w-6/12">
-            <div className="h-[320px] md:h-0"></div>
-          </div>
-          <div className="w-full md:w-6/12">
+          <div className="h-[360px] w-full md:h-[480px] md:w-6/12"></div>
+          <div className="h-[360px] w-full md:h-[480px] md:w-6/12">
             <div>
               <Image
                 priority
@@ -17,22 +15,22 @@ export default function Start() {
                 height="1080"
                 width="1080"
                 alt=""
-                className="h-[320px] w-full object-cover md:h-[640px]"
+                className="h-[360px] w-full object-cover md:h-[480px]"
               />
             </div>
           </div>
         </div>
-        <div className="absolute top-0 h-0 w-full md:h-[640px]">
-          <div className="container mx-auto h-full max-w-6xl px-4 py-16">
-            <div className="-mx-4 flex h-full flex-wrap">
-              <div className="w-full px-4 md:w-6/12">
+        <div className="absolute top-0 w-full">
+          <div className="container mx-auto max-w-6xl px-4">
+            <div className="-mx-4 flex flex-wrap">
+              <div className="h-[360px] w-full px-4 py-8 md:h-[480px] md:w-6/12 md:py-8">
                 <div className="flex h-full flex-col items-start justify-center">
                   <div className="mb-4">
                     <Image
                       priority
                       src="/images/shun-logo.png"
-                      height="480"
-                      width="480"
+                      height="360"
+                      width="360"
                       alt=""
                       className="h-10 w-auto md:h-12"
                     />
@@ -41,15 +39,18 @@ export default function Start() {
                     Mulai produksi merekmu sekarang!
                   </h1>
                   <Link
-                    href="/"
+                    href="https://wa.me/6212345"
+                    target="_blank"
                     className="mb-2 min-w-[140px] rounded bg-[#B4081D] px-4 py-2.5 text-center text-base font-medium text-[#FFFFFF]"
                   >
                     Hubungi Kami
                   </Link>
                 </div>
               </div>
-              <div className="w-full px-4 md:w-6/12">
-                <div className="h-full w-full border-l border-[#FFFAF6]"></div>
+              <div className="h-[360px] w-full px-4 py-8 md:h-[480px] md:w-6/12 md:py-8">
+                <div className="h-full">
+                  <div className="h-full w-full border-l border-[#FFFAF6]"></div>
+                </div>
               </div>
             </div>
           </div>

@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Procedure({ items, index }: any) {
   return (
     <section className={`w-full bg-[${items.background}]`} key={index}>
-      <div className="container mx-auto h-full max-w-6xl px-4 py-16">
+      <div className="container mx-auto h-full max-w-6xl px-4 py-8 md:py-16">
         <div className="flex flex-wrap">
           <div
             className={`mb-4 w-full md:w-6/12 ${
@@ -19,7 +19,7 @@ export default function Procedure({ items, index }: any) {
                   height="480"
                   width="480"
                   alt=""
-                  className="h-64 w-full object-cover"
+                  className="h-[240px] w-full object-cover md:h-[360px]"
                 />
               </div>
               <div className="absolute top-0 left-0 h-full w-full">

@@ -6,10 +6,8 @@ export default function Hero() {
     <section className="w-full bg-[#FFFAF6]">
       <div className="relative">
         <div className="flex flex-wrap">
-          <div className="w-full md:w-6/12">
-            <div className="h-[480px] md:h-0"></div>
-          </div>
-          <div className="w-full md:w-6/12">
+          <div className="h-[480px] w-full md:h-[720px] md:w-6/12"></div>
+          <div className="h-[480px] w-full md:h-[720px] md:w-6/12">
             <div>
               <Image
                 priority
@@ -17,15 +15,15 @@ export default function Hero() {
                 height="1080"
                 width="1080"
                 alt=""
-                className="h-[480px] w-full object-cover md:h-[640px]"
+                className="h-[480px] w-full object-cover md:h-[720px]"
               />
             </div>
           </div>
         </div>
-        <div className="absolute top-0 h-auto w-full md:h-[640px]">
-          <div className="container mx-auto h-full max-w-6xl px-4 py-16">
-            <div className="-mx-4 flex h-full flex-wrap">
-              <div className="w-full px-4 md:w-6/12">
+        <div className="absolute top-0 w-full">
+          <div className="container mx-auto max-w-6xl px-4">
+            <div className="-mx-4 flex flex-wrap">
+              <div className="h-[480px] w-full px-4 py-8 md:h-[720px] md:w-6/12 md:py-16">
                 <div className="flex h-full flex-col items-start justify-center">
                   <h1 className="mb-4 text-4xl font-semibold text-[#000000] md:mb-8 lg:text-6xl">
                     Buat Merk Kosmetik kamu sendiri? Bisa Banget!
@@ -35,15 +33,18 @@ export default function Hero() {
                     sampai tuntas!
                   </p>
                   <Link
-                    href="/"
-                    className="mb-2 text-center min-w-[140px] rounded bg-[#B4081D] px-4 py-2.5 text-base font-medium text-[#FFFFFF]"
+                    href="https://wa.me/6212345"
+                    target="_blank"
+                    className="mb-2 min-w-[140px] rounded bg-[#B4081D] px-4 py-2.5 text-center text-base font-medium text-[#FFFFFF]"
                   >
                     Hubungi Kami
                   </Link>
                 </div>
               </div>
-              <div className="w-full px-4 md:w-6/12">
-                <div className="h-full w-full border-r border-[#FFFAF6]"></div>
+              <div className="h-[480px] w-full px-4 py-8 md:h-[720px] md:w-6/12 md:py-16">
+                <div className="h-full">
+                  <div className="h-full w-full border-r border-[#FFFAF6]"></div>
+                </div>
               </div>
             </div>
           </div>

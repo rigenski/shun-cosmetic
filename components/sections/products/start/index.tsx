@@ -1,10 +1,9 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Start() {
   return (
     <section className="w-full bg-[#FFFAF6]">
-      <div className="container mx-auto h-full max-w-6xl px-4 py-16">
+      <div className="container mx-auto h-full max-w-6xl px-4 py-8 md:py-16">
         <div className="flex flex-col items-center justify-center">
           <h1 className="mb-4 text-center text-2xl font-semibold text-[#000000] md:mb-8 md:text-4xl">
             Mulai produksi merekmu sekarang!
@@ -14,8 +13,9 @@ export default function Start() {
             Silahkan hubungi kami di sini
           </p>
           <Link
-            href="/"
-            className="min-w-[140px] rounded bg-[#B4081D] px-4 py-2.5 text-center text-base font-medium text-[#FFFFFF]"
+            href="https://wa.me/6212345"
+            target="_blank"
+            className="min-w-[140px] rounded bg-[#B4081D] px-4 py-2.5 text-center text-center text-base font-medium text-[#FFFFFF]"
           >
             Hubungi Kami
           </Link>

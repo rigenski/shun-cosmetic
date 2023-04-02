@@ -121,7 +121,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="pt-[56px] md:h-[64px]">
+      <main className="pt-[56px] md:pt-[64px]">
         <Hero />
         {categories.map((item, index) => {
           return <Category items={item} index={index} />;

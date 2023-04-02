@@ -23,11 +23,11 @@ export default function Product() {
   return (
     <section className="w-full bg-[#FFFAF6]">
       <div className="relative">
-        <div className="container mx-auto h-full max-w-6xl px-4 py-16">
+        <div className="container mx-auto h-full max-w-6xl">
           <div className="flex flex-wrap">
-            <div className="w-6/12">
+            <div className="h-[480px] w-6/12 px-4 py-8 md:h-[720px] md:py-16">
               <div
-                className="h-[512px] w-full bg-cover bg-center bg-no-repeat"
+                className="h-full w-full bg-cover bg-center bg-no-repeat "
                 style={{
                   backgroundImage:
                     "url(/images/home/product/product-illust.png)",
@@ -38,11 +38,11 @@ export default function Product() {
                 </div>
               </div>
             </div>
-            <div className="w-6/12"></div>
+            <div className="h-[480px] w-6/12 px-4 py-8 md:h-[720px] md:py-16"></div>
           </div>
         </div>
-        <div className="absolute top-0 h-[640px] w-full">
-          <div className="container mx-auto h-full max-w-6xl px-4 py-16">
+        <div className="absolute top-0 w-full">
+          <div className="container mx-auto h-[480px] max-w-6xl px-4 py-8 md:h-[720px] md:py-16">
             <div className="flex h-full flex-col items-end justify-center">
               <h2 className="mb-4 text-end text-2xl font-semibold text-[#000000] md:text-4xl">
                 Produk yang bisa diproduksi
@@ -59,7 +59,7 @@ export default function Product() {
                 })}
               </ul>
               <Link
-                href="/"
+                href="/products"
                 className="min-w-[140px] rounded border border-[#000000] px-4 py-2.5 text-base font-medium text-[#000000]"
               >
                 Lihat Selengkapnya

@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Category({ items, index }: any) {
   return (
     <section className={`w-full bg-[${items.background}]`} key={index}>
-      <div className="container mx-auto h-full max-w-6xl px-4 py-16">
+      <div className="container mx-auto max-w-6xl px-4 py-8 md:py-16">
         <div className="mb-4 md:mb-8">
           <h2 className="text-2xl font-semibold text-[#000000] lg:text-4xl">
             {items.title}
@@ -14,7 +14,7 @@ export default function Category({ items, index }: any) {
         <div className="-mx-4 flex flex-wrap pl-4">
           {items.products.map((item: any, index: number) => {
             return (
-              <div className="mb-4 w-full px-4 sm:w-6/12 md:w-3/12" key={index}>
+              <div className="mb-4 w-6/12 px-4 md:w-3/12" key={index}>
                 <ul className="list-disc">
                   {item.map((item: any, index: number) => {
                     return (

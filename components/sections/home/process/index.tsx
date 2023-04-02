@@ -28,7 +28,7 @@ export default function Process() {
           {process.map((item, index) => {
             return (
               <div
-                className="h-[480px] w-6/12 bg-cover bg-center bg-no-repeat p-4 md:h-[640px] md:w-3/12"
+                className="h-[480px] w-6/12 bg-cover bg-center bg-no-repeat p-4 md:h-[720px] md:w-3/12"
                 style={{
                   backgroundImage: `url('/images/home/process/${item.image}')`,
                 }}
@@ -55,16 +55,16 @@ export default function Process() {
             );
           })}
         </div>
-        <div className="absolute top-0 h-[960px] w-full md:h-[640px]">
-          <div className="container mx-auto h-full max-w-6xl px-4 py-16">
+        <div className="absolute top-0 w-full">
+          <div className="container mx-auto h-[960px] max-w-6xl px-4 py-8 md:h-[720px] md:py-16">
             <div className="flex h-full flex-col items-center justify-between">
               <h2 className="text-center text-2xl font-semibold text-[#000000] md:text-4xl">
                 Proses Maklor
               </h2>
-              <div>
+              <div className="mb-2">
                 <Link
-                  href="/"
-                  className="mb-2 min-w-[140px] rounded border border-[#000000] px-4 py-2.5 text-base font-medium text-[#000000]"
+                  href="/procedures"
+                  className="min-w-[140px] rounded border border-[#000000] px-4 py-2.5 text-base font-medium text-[#000000]"
                 >
                   Lihat Selengkapnya
                 </Link>

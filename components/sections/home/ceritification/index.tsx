@@ -18,12 +18,12 @@ export default function Certification() {
   return (
     <section className="w-full bg-[#FFFAF6]">
       <div className="relative">
-        <div className="container mx-auto h-full max-w-6xl px-4 py-16">
+        <div className="container mx-auto h-full max-w-6xl">
           <div className="flex flex-wrap">
-            <div className="w-6/12"></div>
-            <div className="w-6/12">
+            <div className="h-[480px] w-6/12 px-4 py-8 md:h-[720px] md:py-16"></div>
+            <div className="h-[480px] w-6/12 px-4 py-8 md:h-[720px] md:py-16">
               <div
-                className="h-[512px] w-full bg-cover bg-center bg-no-repeat"
+                className="h-full w-full bg-cover bg-center bg-no-repeat"
                 style={{
                   backgroundImage:
                     "url(/images/home/certification/certification-illust.png)",
@@ -37,7 +37,7 @@ export default function Certification() {
           </div>
         </div>
         <div className="absolute top-0 h-[640px] w-full">
-          <div className="container mx-auto h-full max-w-6xl px-4 py-16">
+          <div className="container mx-auto h-[480px] max-w-6xl px-4 py-8 md:h-[720px] md:py-16">
             <div className="flex h-full flex-col items-start justify-center">
               <h2 className="mb-4 text-2xl font-semibold text-[#000000] md:text-4xl">
                 Sertifikasi

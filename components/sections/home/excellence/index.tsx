@@ -37,9 +37,9 @@ const excellences = [
 export default function Excellence() {
   return (
     <section className="w-full bg-[#FFEED3]">
-      <div className="container mx-auto h-full max-w-6xl px-4 py-16">
+      <div className="container mx-auto h-full max-w-6xl px-4 py-8 md:py-16">
         <div className="mb-8 flex justify-center">
-          <h2 className="text-2xl font-semibold text-[#000000] lg:text-4xl">
+          <h2 className="text-center text-2xl font-semibold text-[#000000] lg:text-4xl">
             Mengapa Memilih Kami?
           </h2>
         </div>
@@ -47,14 +47,14 @@ export default function Excellence() {
           {excellences.map((item, index) => {
             return (
               <div
-                className={`mb-4 px-4 ${
+                className={`mb-4 px-4 md:mb-8 ${
                   excellences.length - 1 !== index
                     ? "w-full md:w-6/12"
                     : "w-full"
                 }`}
                 key={index}
               >
-                <div className="mb-4 flex">
+                <div className="flex">
                   <div className="mr-4">
                     <Image
                       priority

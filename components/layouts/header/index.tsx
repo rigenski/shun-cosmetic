@@ -3,11 +3,26 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+const menus = [
+  {
+    title: "List Produk",
+    url: "/products",
+  },
+  {
+    title: "Tata Cara Maklon",
+    url: "/procedures",
+  },
+  {
+    title: "Hubungi Kami",
+    url: "/contacts",
+  },
+];
+
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed z-40 w-full bg-[#FEF0E4]">
+    <nav className="fixed z-40 w-full bg-[#FEF0E4] shadow">
       <div className="container mx-auto max-w-6xl px-4 py-2">
         <div className="flex items-center justify-between">
           <Link href="/">
@@ -25,30 +40,18 @@ export default function Header() {
               isMenuOpen ? "right-0" : "-right-full"
             }`}
           >
-            <li className="my-1 md:my-0">
-              <Link
-                href="/"
-                className="text-[#000000 px-4 py-2 text-base font-normal"
-              >
-                List Produk
-              </Link>
-            </li>
-            <li className="my-1 md:my-0">
-              <Link
-                href="/"
-                className="text-[#000000 px-4 py-2 text-base font-normal"
-              >
-                Tata Cara Maklon
-              </Link>
-            </li>
-            <li className="my-1 md:my-0">
-              <Link
-                href="/"
-                className="text-[#000000 px-4 py-2 text-base font-normal"
-              >
-                Hubungi Kami
-              </Link>
-            </li>
+            {menus.map((item, index) => {
+              return (
+                <li className="my-2 md:my-0" key={index}>
+                  <Link
+                    href={item.url}
+                    className="text-[#000000 px-4 py-2 text-base font-normal"
+                  >
+                    {item.title}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
           <button
             className="block md:hidden"
