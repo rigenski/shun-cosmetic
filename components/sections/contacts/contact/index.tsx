@@ -1,13 +1,13 @@
 import Image from "next/image";
 
-export default function Contact({ items, key: index }: any) {
+export default function Contact({ items, key }: any) {
   return (
-    <section className={`w-full bg-[${items.background}]`} key={index}>
+    <section className={`w-full bg-[${items.background}]`} key={key}>
       <div className="relative">
         <div className="flex flex-wrap">
           <div
             className={`h-[360px] w-full md:h-[480px] md:w-6/12 ${
-              index % 2 === 0 ? "order-1" : "order-1 md:order-2"
+              key % 2 === 0 ? "order-1" : "order-1 md:order-2"
             }`}
           >
             <div>
@@ -23,7 +23,7 @@ export default function Contact({ items, key: index }: any) {
           </div>
           <div
             className={`h-[360px] w-full md:h-[480px]  md:w-6/12 ${
-              index % 2 === 0 ? "order-2" : "order-2 md:order-1"
+              key % 2 === 0 ? "order-2" : "order-2 md:order-1"
             }`}
           ></div>
         </div>
@@ -32,13 +32,13 @@ export default function Contact({ items, key: index }: any) {
             <div className="-mx-4 flex flex-wrap">
               <div
                 className={`h-[360px] w-full px-4 py-8 md:h-[480px] md:w-6/12 md:py-16 ${
-                  index % 2 === 0 ? "order-1" : "order-1 md:order-2"
+                  key % 2 === 0 ? "order-1" : "order-1 md:order-2"
                 }`}
               >
                 <div className="h-full">
                   <div
                     className={`h-full ${
-                      index % 2 === 0
+                      key % 2 === 0
                         ? "rounded-bl-2xl border-l border-b border-[#FFFFFF]"
                         : "rounded-br-2xl border-r border-b border-[#FFFFFF]"
                     }`}
@@ -47,7 +47,7 @@ export default function Contact({ items, key: index }: any) {
               </div>
               <div
                 className={`h-[360px] w-full px-4 py-8 md:h-[480px] md:w-6/12 md:py-16 ${
-                  index % 2 === 0 ? "order-2" : "order-2 md:order-1"
+                  key % 2 === 0 ? "order-2" : "order-2 md:order-1"
                 }`}
               >
                 <div className="h-full">

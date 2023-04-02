@@ -2,9 +2,9 @@
 
 import Image from "next/image";
 
-export default function Category({ items, key: index }: any) {
+export default function Category({ items, key }: any) {
   return (
-    <section className={`w-full bg-[${items.background}]`} key={index}>
+    <section className={`w-full bg-[${items.background}]`} key={key}>
       <div className="container mx-auto max-w-6xl px-4 py-8 md:py-16">
         <div className="mb-4 md:mb-8">
           <h2 className="text-2xl font-semibold text-[#000000] lg:text-4xl">
