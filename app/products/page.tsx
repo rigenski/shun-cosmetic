@@ -1,7 +1,9 @@
+"use client";
 import Header from "@/components/layouts/header";
 import Category from "@/components/sections/products/category";
 import Hero from "@/components/sections/products/hero";
 import Start from "@/components/sections/products/start";
+import { useEffect } from "react";
 
 const categories = [
   {
@@ -118,6 +120,10 @@ const categories = [
 ];
 
 export default function Home() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Header />

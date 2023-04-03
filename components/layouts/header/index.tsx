@@ -1,7 +1,7 @@
-"use client";
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const menus = [
   {
@@ -19,7 +19,7 @@ const menus = [
 ];
 
 export default function Header() {
-  const pathname = location.pathname.split("/")[1];
+  const pathname = usePathname();
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -47,7 +47,11 @@ export default function Header() {
                 <li className="my-2 md:my-0" key={index}>
                   <Link
                     href={`/${item.url}`}
-                    className="text-[#000000 px-4 py-2 text-base font-normal"
+                    className={`text-[#000000 px-4 py-2 text-base ${
+                      pathname === `/${item.url}`
+                        ? "font-semibold"
+                        : "font-normal"
+                    }`}
                   >
                     {item.title}
                   </Link>

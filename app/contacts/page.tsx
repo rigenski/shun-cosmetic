@@ -1,7 +1,9 @@
+"use client";
 import Header from "@/components/layouts/header";
 import Contact from "@/components/sections/contacts/contact";
 import Hero from "@/components/sections/contacts/hero";
 import Map from "@/components/sections/contacts/map";
+import { useEffect } from "react";
 
 const contacts = [
   {
@@ -21,6 +23,10 @@ const contacts = [
 ];
 
 export default function Home() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Header />
