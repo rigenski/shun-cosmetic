@@ -64,7 +64,7 @@ export default function Process() {
               <div className="mb-2">
                 <Link
                   href="/procedures"
-                  className="min-w-[140px] rounded border border-[#000000] px-4 py-2.5 text-base font-medium text-[#000000]"
+                  className="min-w-[140px] rounded border border-[#000000] px-4 py-2.5 text-base font-medium text-[#000000] transition-all hover:translate-y-2 hover:opacity-75"
                 >
                   Lihat Selengkapnya
                 </Link>

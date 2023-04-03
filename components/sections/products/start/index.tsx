@@ -15,7 +15,7 @@ export default function Start() {
           <Link
             href="https://wa.me/6212345"
             target="_blank"
-            className="min-w-[140px] rounded bg-[#B4081D] px-4 py-2.5 text-center text-base font-medium text-[#FFFFFF]"
+            className="mb-2 min-w-[140px] rounded bg-[#B4081D] px-4 py-2.5 text-center text-base font-medium text-[#FFFFFF] transition-all hover:translate-y-2 hover:opacity-75"
           >
             Hubungi Kami
           </Link>
