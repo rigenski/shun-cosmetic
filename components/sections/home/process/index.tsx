@@ -35,9 +35,9 @@ export default function Process() {
                 key={index}
               >
                 <div className="relative flex h-full items-center justify-center">
-                  <h4 className="mb-2 text-center text-base font-medium text-[#000000] md:text-2xl">
+                  <h2 className="mb-2 text-center text-base font-medium text-[#000000] md:text-2xl">
                     {item.title}
-                  </h4>
+                  </h2>
                   {process.length - 1 !== index && (
                     <div className="absolute -right-10 hidden md:block">
                       <Image

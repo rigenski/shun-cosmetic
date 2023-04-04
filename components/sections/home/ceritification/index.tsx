@@ -60,9 +60,9 @@ export default function Certification() {
                           <h2 className="text-base font-semibold text-[#000000] md:text-lg">
                             {item.title}
                           </h2>
-                          <h4 className="text-sm font-normal text-[#000000] md:text-base">
+                          <p className="text-sm font-normal text-[#000000] md:text-base">
                             {item.description}
-                          </h4>
+                          </p>
                         </div>
                       </div>
                     </li>
