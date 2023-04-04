@@ -28,7 +28,7 @@ export default function Hero() {
                   <h1 className="mb-4 text-4xl font-semibold text-[#000000] md:mb-8 lg:text-6xl">
                     Buat Merk Kosmetik kamu sendiri? Bisa Banget!
                   </h1>
-                  <p className="mb-4 text-sm font-normal text-[#000000] opacity-50 lg:text-base">
+                  <p className="mb-4 text-sm font-normal text-[#000000] opacity-75 lg:text-base">
                     Dengan modal kecil, produksi cepat, perizinan diurusin
                     sampai tuntas!
                   </p>

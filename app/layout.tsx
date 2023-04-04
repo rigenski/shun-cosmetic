@@ -1,4 +1,5 @@
 import "styles/globals.css";
+import "styles/components.css";
 import { Montserrat } from "next/font/google";
 import "nprogress/nprogress.css";
 
@@ -8,8 +9,8 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  title: "Shun Cosmetic - Homepage",
-  description: "Hompage",
+  title: "Shun Cosmetic",
+  description: "Shun Cosmetic",
 };
 
 export default function RootLayout({

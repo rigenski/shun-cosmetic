@@ -66,9 +66,9 @@ export default function Excellence() {
                     />
                   </div>
                   <div>
-                    <h4 className="mb-2 text-lg font-semibold text-[#000000] lg:text-2xl">
+                    <h2 className="mb-2 text-lg font-semibold text-[#000000] lg:text-2xl">
                       {item.title}
-                    </h4>
+                    </h2>
                     <p className="text-sm font-normal text-[#000000] lg:text-base">
                       {item.description}
                     </p>

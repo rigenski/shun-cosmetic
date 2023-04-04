@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 const certifications = [
   {
@@ -58,9 +57,9 @@ export default function Certification() {
                           />
                         </div>
                         <div>
-                          <h4 className="text-base font-semibold text-[#000000] md:text-lg">
+                          <h2 className="text-base font-semibold text-[#000000] md:text-lg">
                             {item.title}
-                          </h4>
+                          </h2>
                           <h4 className="text-sm font-normal text-[#000000] md:text-base">
                             {item.description}
                           </h4>

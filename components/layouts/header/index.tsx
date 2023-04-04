@@ -27,7 +27,7 @@ export default function Header() {
     <nav className="fixed z-40 w-full bg-[#FEF0E4] shadow">
       <div className="container mx-auto max-w-6xl px-4 py-2">
         <div className="flex items-center justify-between">
-          <Link href="/">
+          <Link href="/" aria-label="Home">
             <Image
               priority
               src="/images/shun-logo.png"
@@ -47,7 +47,7 @@ export default function Header() {
                 <li className="my-2 md:my-0" key={index}>
                   <Link
                     href={`/${item.url}`}
-                    className={`text-[#000000 px-4 py-2 text-base ${
+                    className={`text-[#000000 px-4 py-2 text-base transition-all hover:font-semibold ${
                       pathname === `/${item.url}`
                         ? "font-semibold"
                         : "font-normal"
@@ -61,6 +61,7 @@ export default function Header() {
           </ul>
           <button
             className="block md:hidden"
+            aria-label="Menu"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <Image
