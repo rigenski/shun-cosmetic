@@ -2,7 +2,7 @@
 import Header from "@/components/layouts/header";
 import Hero from "@/components/sections/procedures/hero";
 import Procedure from "@/components/sections/procedures/procedure";
-import { useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 
 const categories = [
   {
@@ -11,6 +11,7 @@ const categories = [
       "Merupakan step pertama dari flow untuk membuat brand skin care kamu. Beritahu tim konsultan SHUN mengenai aspirasi kamu dan visi produk tersebut. Kamu dapat memberikan ide bahan (ingredients) dan menentukan langsung bersama dengan konsultan.",
     image: "communication.png",
     background: "#FEF0E4",
+    section: "communication",
   },
   {
     title: "Pembuatan Sampel",
@@ -18,6 +19,7 @@ const categories = [
       "Kamu akan ditemani oleh konsultan kami sampai mendapatkan ingredients yang pas, dengan pembuatan sampel. Kamu dapat membuat sampel untuk 1 produk atau lebih langsung di pabrik SHUN.",
     image: "create-sample.png",
     background: "#FFEED3",
+    section: "create-sample",
   },
   {
     title: "Surat Penawaran Resmi",
@@ -25,6 +27,7 @@ const categories = [
       "Dari sampel yang sudah ada, kamu dapat menentukan hasil akhir produk yang ingin diproduksi. Kami akan memberikan perhitungan harga modal kamu. Jaminan harga terbaik!",
     image: "offer-letter.png",
     background: "#FEF0E4",
+    section: "offer-letter",
   },
   {
     title: "Registrasi BPOM",
@@ -32,6 +35,7 @@ const categories = [
       "Setelah memantapkan hati untuk memulai produkmu sendiri dan memutuskan untuk lanjut produksi, Tim Konsultan kami akan membantumu untuk mengurus semua perizinan yang dibutuhkan mulai dari BPOM, Merk, Surat Perjanjian, dan lainnya.",
     image: "registration-bpom.png",
     background: "#FFEED3",
+    section: "registration-bpom",
   },
   {
     title: "Desain Kemasan Produk",
@@ -39,6 +43,7 @@ const categories = [
       "Setelah mendapatkan izin edar dari BPOM, kamu bisa langsung menentukan desain kemasan kamu dan packagingnya. Packaging kamu harus menarik! Oleh karena itu, Konsultan SHUN selalu siap setia menemani kamu untuk brainstorming dan diskusi.",
     image: "packaging-design.png",
     background: "#FEF0E4",
+    section: "packaging-design",
   },
   {
     title: "Proses Produksi dan Pengiriman Produk",
@@ -46,6 +51,7 @@ const categories = [
       "Done! Kamu tinggal duduk tenang menunggu produk kamu diproduksi dalam 4-5 hari, dan produk siap untuk dikirim ke gudangmu.",
     image: "process-production.png",
     background: "#FFEED3",
+    section: "process-production",
   },
   {
     title: "Report Order Kilat",
@@ -53,13 +59,18 @@ const categories = [
       "Untuk produk kamu yang sudah berjalan dan mengurus segala perizinan, order lagi di SHUN cuma perlu waktu 1 minggu sampai produk kamu re-stok kembali.",
     image: "repeat-order.png",
     background: "#FEF0E4",
+    section: "repeat-order",
   },
 ];
 
 export default function Home() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  const query = useSearchParams();
+  // const hash = router.asPath.split("#")[1];
+  // console.log(query);
+
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
 
   return (
     <>

@@ -3,7 +3,11 @@ import Image from "next/image";
 
 export default function Procedure({ items, index }: any) {
   return (
-    <section className={`w-full bg-[${items.background}]`} key={index}>
+    <section
+      id={`${items.section}`}
+      className={`w-full bg-[${items.background}]`}
+      key={index}
+    >
       <div className="container mx-auto h-full max-w-6xl px-4 py-8 md:py-16">
         <div className="flex flex-wrap">
           <div

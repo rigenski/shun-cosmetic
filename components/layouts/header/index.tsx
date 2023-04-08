@@ -5,16 +5,29 @@ import { usePathname } from "next/navigation";
 
 const menus = [
   {
+    title: "Home",
+    url: "",
+    type: "link",
+  },
+  {
     title: "List Produk",
     url: "products",
+    type: "link",
   },
   {
     title: "Tata Cara Maklon",
     url: "procedures",
+    type: "link",
+  },
+  {
+    title: "About Us",
+    url: "contacts",
+    type: "link",
   },
   {
     title: "Hubungi Kami",
     url: "contacts",
+    type: "button",
   },
 ];
 
@@ -38,25 +51,37 @@ export default function Header() {
             />
           </Link>
           <ul
-            className={`fixed top-[56px] flex w-full flex-col items-center bg-[#FEF0E4] py-4 shadow transition-all md:static md:w-auto md:flex-row md:py-0 md:shadow-none ${
+            className={`items=center fixed top-[56px] mr-0 flex w-full flex-col items-center bg-[#FEF0E4] py-4 shadow transition-all md:static md:-mr-4 md:w-auto md:flex-row md:py-0 md:shadow-none ${
               isMenuOpen ? "right-0" : "-right-full"
             }`}
           >
             {menus.map((item, index) => {
-              return (
-                <li className="my-2 md:my-0" key={index}>
+              if (item.type === "link") {
+                return (
+                  <li className="my-2 md:my-0" key={index}>
+                    <Link
+                      href={`/${item.url}`}
+                      className={`text-[#000000 px-4 py-2 text-base transition-all hover:font-semibold ${
+                        pathname === `/${item.url}`
+                          ? "font-semibold"
+                          : "font-normal"
+                      }`}
+                    >
+                      {item.title}
+                    </Link>
+                  </li>
+                );
+              } else if (item.type === "button") {
+                return (
                   <Link
-                    href={`/${item.url}`}
-                    className={`text-[#000000 px-4 py-2 text-base transition-all hover:font-semibold ${
-                      pathname === `/${item.url}`
-                        ? "font-semibold"
-                        : "font-normal"
-                    }`}
+                    href="https://wa.me/6212345"
+                    target="_blank"
+                    className="mx-4 min-w-[140px] rounded bg-[#B4081D] px-4 py-2.5 text-center text-base font-medium text-[#FFFFFF] transition-all hover:translate-y-2 hover:opacity-75"
                   >
                     {item.title}
                   </Link>
-                </li>
-              );
+                );
+              }
             })}
           </ul>
           <button
