@@ -8,9 +8,6 @@ export default function Profile() {
   const opts: YouTubeProps["opts"] = {
     height: "100%",
     width: "100%",
-    playerVars: {
-      autoplay: 1,
-    },
   };
 
   return (

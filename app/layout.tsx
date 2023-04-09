@@ -1,7 +1,7 @@
-import "styles/globals.css";
-import "styles/components.css";
+import ProgressBar from "@/components/layouts/proggress-bar";
 import { Montserrat } from "next/font/google";
-import "nprogress/nprogress.css";
+import "styles/components.css";
+import "styles/globals.css";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -20,7 +20,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={montserrat.className}>
-      <body>{children}</body>
+      <body>
+        <ProgressBar>{children}</ProgressBar>
+      </body>
     </html>
   );
 }

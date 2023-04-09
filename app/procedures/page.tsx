@@ -2,7 +2,7 @@
 import Header from "@/components/layouts/header";
 import Hero from "@/components/sections/procedures/hero";
 import Procedure from "@/components/sections/procedures/procedure";
-import { useSearchParams } from "next/navigation";
+import { useEffect } from "react";
 
 const categories = [
   {
@@ -64,13 +64,19 @@ const categories = [
 ];
 
 export default function Home() {
-  const query = useSearchParams();
-  // const hash = router.asPath.split("#")[1];
-  // console.log(query);
+  useEffect(() => {
+    if (window.location.hash) {
+      const element = document.getElementById(
+        window.location.hash.split("#")[1]
+      );
 
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [window]);
 
   return (
     <>
