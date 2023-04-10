@@ -1,6 +1,21 @@
 import Image from "next/image";
 import Link from "next/link";
 
+const heroImages = [
+  {
+    image: "hero1-illust.png",
+  },
+  {
+    image: "hero2-illust.png",
+  },
+  {
+    image: "hero3-illust.png",
+  },
+  {
+    image: "hero4-illust.png",
+  },
+];
+
 export default function Hero() {
   return (
     <section className="w-full bg-[#FFFAF6]">
@@ -8,15 +23,21 @@ export default function Hero() {
         <div className="flex flex-wrap">
           <div className="h-[480px] w-full md:h-[720px] md:w-6/12"></div>
           <div className="h-[480px] w-full md:h-[720px] md:w-6/12">
-            <div>
-              <Image
-                priority
-                src="/images/home/hero/hero-illust.png"
-                height="1080"
-                width="1080"
-                alt=""
-                className="h-[480px] w-full object-cover md:h-[720px]"
-              />
+            <div className="flex flex-wrap">
+              {heroImages.map((item, index) => {
+                return (
+                  <div className="w-6/12" key={index}>
+                    <Image
+                      priority
+                      src={`/images/home/hero/${item.image}`}
+                      height="1080"
+                      width="1080"
+                      alt=""
+                      className="h-[240px] w-full object-cover md:h-[360px]"
+                    />
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
