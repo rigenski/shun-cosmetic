@@ -16,14 +16,14 @@ export const metadata = {
     url: "https://shun.co.id/",
     title: "Shun Cosmetic",
     description: "Pabrik Maklon Buat Merk Kosmetik kamu sendiri",
-    images: "https://shun.co.id/shun-logo.png",
+    images: "https://shun.co.id/images/shun-logo.png",
   },
   twitter: {
     card: "summary_large_image",
     url: "https://shun.co.id/",
     title: "Shun Cosmetic",
     description: "Pabrik Maklon Buat Merk Kosmetik kamu sendiri",
-    images: "https://shun.co.id/shun-logo.png",
+    images: "https://shun.co.id/images/shun-logo.png",
   },
 };
 
