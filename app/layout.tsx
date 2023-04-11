@@ -13,17 +13,17 @@ export const metadata = {
   description: "Pabrik Maklon Buat Merk Kosmetik kamu sendiri",
   openGraph: {
     type: "website",
-    url: "https://www.shun.co.id/",
+    url: "https://shun.co.id/",
     title: "Shun Cosmetic",
     description: "Pabrik Maklon Buat Merk Kosmetik kamu sendiri",
-    images: "https://www.shun.co.id/shun-logo.png",
+    images: "https://shun.co.id/shun-logo.png",
   },
   twitter: {
     card: "summary_large_image",
-    url: "https://www.shun.co.id/",
+    url: "https://shun.co.id/",
     title: "Shun Cosmetic",
     description: "Pabrik Maklon Buat Merk Kosmetik kamu sendiri",
-    images: "https://www.shun.co.id/shun-logo.png",
+    images: "https://shun.co.id/shun-logo.png",
   },
 };
 
