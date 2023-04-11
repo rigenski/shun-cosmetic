@@ -11,6 +11,20 @@ const montserrat = Montserrat({
 export const metadata = {
   title: "Shun Cosmetic",
   description: "Shun Cosmetic",
+  openGraph: {
+    type: "website",
+    url: "https://www.shun.co.id/",
+    title: "Shun Cosmetic",
+    description: "Shun Cosmetic",
+    images: "https://www.shun.co.id/shun-logo.png",
+  },
+  twitter: {
+    card: "summary_large_image",
+    url: "https://www.shun.co.id/",
+    title: "Shun Cosmetic",
+    description: "Shun Cosmetic",
+    images: "https://www.shun.co.id/shun-logo.png",
+  },
 };
 
 export default function RootLayout({
