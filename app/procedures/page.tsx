@@ -1,4 +1,5 @@
 "use client";
+import Footer from "@/components/layouts/footer";
 import Header from "@/components/layouts/header";
 import Hero from "@/components/sections/procedures/hero";
 import Procedure from "@/components/sections/procedures/procedure";
@@ -87,6 +88,7 @@ export default function Home() {
           return <Procedure items={item} index={index} key={index} />;
         })}
       </main>
+      <Footer />
     </>
   );
 }

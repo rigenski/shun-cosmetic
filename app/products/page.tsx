@@ -1,4 +1,5 @@
 "use client";
+import Footer from "@/components/layouts/footer";
 import Header from "@/components/layouts/header";
 import Category from "@/components/sections/products/category";
 import Hero from "@/components/sections/products/hero";
@@ -140,6 +141,7 @@ export default function Home() {
         </div>
         <Start />
       </main>
+      <Footer />
     </>
   );
 }

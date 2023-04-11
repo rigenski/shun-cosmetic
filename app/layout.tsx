@@ -1,5 +1,8 @@
+import GoogleAnalytic from "@/components/layouts/google-analythic";
+import MetaPixel from "@/components/layouts/meta-pixel";
 import ProgressBar from "@/components/layouts/proggress-bar";
 import { Montserrat } from "next/font/google";
+
 import "styles/components.css";
 import "styles/globals.css";
 
@@ -35,7 +38,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={montserrat.className}>
       <body>
-        <ProgressBar>{children}</ProgressBar>
+        <MetaPixel>
+          <GoogleAnalytic>
+            <ProgressBar>{children}</ProgressBar>
+          </GoogleAnalytic>
+        </MetaPixel>
       </body>
     </html>
   );

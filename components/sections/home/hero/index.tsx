@@ -1,5 +1,8 @@
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const heroImages = [
   {
@@ -17,29 +20,21 @@ const heroImages = [
 ];
 
 export default function Hero() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+  };
+
   return (
     <section className="w-full bg-[#FFFAF6]">
       <div className="relative">
         <div className="flex flex-wrap">
           <div className="h-[480px] w-full md:h-[720px] md:w-6/12"></div>
-          <div className="h-[480px] w-full md:h-[720px] md:w-6/12">
-            <div className="flex flex-wrap">
-              {heroImages.map((item, index) => {
-                return (
-                  <div className="w-6/12" key={index}>
-                    <Image
-                      priority
-                      src={`/images/home/hero/${item.image}`}
-                      height="1080"
-                      width="1080"
-                      alt=""
-                      className="h-[240px] w-full object-cover md:h-[360px]"
-                    />
-                  </div>
-                );
-              })}
-            </div>
-          </div>
+          <div className="h-[480px] w-full md:h-[720px] md:w-6/12"></div>
         </div>
         <div className="absolute top-0 w-full">
           <div className="container mx-auto max-w-6xl px-4">
@@ -54,7 +49,7 @@ export default function Hero() {
                     sampai tuntas!
                   </p>
                   <Link
-                    href="https://wa.me/62818511744/"
+                    href="https://api.whatsapp.com/send?phone=62818511744&text=Hello%20SHUN%2C%20saya%20tertarik%20untuk%20memulai%20produksi%20maklon.%20Boleh%20tanya-tanya%3F%20%F0%9F%98%80"
                     target="_blank"
                     className="mb-2 min-w-[140px] rounded bg-[#B4081D] px-4 py-2.5 text-center text-base font-medium text-[#FFFFFF] transition-all hover:translate-y-2 hover:opacity-75"
                   >
@@ -63,8 +58,23 @@ export default function Hero() {
                 </div>
               </div>
               <div className="h-[480px] w-full px-4 py-8 md:h-[720px] md:w-6/12 md:py-16">
-                <div className="h-full">
-                  <div className="h-full w-full border-r border-[#FFFAF6]"></div>
+                <div className="h-full w-full">
+                  <Slider {...settings} className="h-full w-full">
+                    {heroImages.map((item, index) => {
+                      return (
+                        <div className="h-full w-full" key={index}>
+                          <Image
+                            priority
+                            src={`/images/home/hero/${item.image}`}
+                            height="1080"
+                            width="1080"
+                            alt=""
+                            className="max-h-[400px] w-full object-cover md:max-h-[580px]"
+                          />
+                        </div>
+                      );
+                    })}
+                  </Slider>
                 </div>
               </div>
             </div>
