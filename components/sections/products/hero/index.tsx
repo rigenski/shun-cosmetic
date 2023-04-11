@@ -6,18 +6,23 @@ import React from "react";
 const categories = [
   {
     title: "Hand and Body Care",
+    section: "hand-body-care",
   },
   {
     title: "Skin Care",
+    section: "skin-care",
   },
   {
     title: "Skin Treatment",
+    section: "skin-treatment",
   },
   {
-    title: "Perfume",
+    title: "Parfume",
+    section: "parfume",
   },
   {
     title: "Hair Care",
+    section: "hair-care",
   },
 ];
 
@@ -74,12 +79,12 @@ export default function Hero() {
                     {categories.map((item, index) => {
                       return (
                         <li className="mb-2" key={index}>
-                          <Link
-                            href="/"
+                          <a
+                            href={`#${item.section}`}
                             className="text-base font-medium text-[#000000] md:text-lg"
                           >
                             {item.title}
-                          </Link>
+                          </a>
                         </li>
                       );
                     })}

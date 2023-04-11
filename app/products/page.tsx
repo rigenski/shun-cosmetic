@@ -46,6 +46,7 @@ const categories = [
     image: "bodycare-illust.png",
     background: "#FEF0E4",
     type: "horizontal",
+    section: "hand-body-care",
   },
   {
     title: "Skin Care",
@@ -94,6 +95,7 @@ const categories = [
     image: "skincare-illust.png",
     background: "#FFEED3",
     type: "horizontal",
+    section: "skin-care",
   },
   {
     title: "Parfume",
@@ -104,6 +106,7 @@ const categories = [
     image: "parfume-illust.png",
     background: "#FFE4D6",
     type: "vertical",
+    section: "parfume",
   },
   {
     title: "Hair Care",
@@ -116,6 +119,7 @@ const categories = [
     image: "haircare-illust.png",
     background: "#FEF0E4",
     type: "vertical",
+    section: "hair-care",
   },
 ];
 

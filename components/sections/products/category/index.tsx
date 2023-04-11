@@ -5,7 +5,11 @@ import Image from "next/image";
 export default function Category({ items, index }: any) {
   if (items.type === "horizontal") {
     return (
-      <section className={`w-full bg-[${items.background}]`} key={index}>
+      <section
+        id={items.section}
+        className={`w-full bg-[${items.background}]`}
+        key={index}
+      >
         <div className="container mx-auto max-w-6xl px-4 py-8 md:py-16">
           <div className="mb-4 md:mb-8">
             <h2 className="text-2xl font-semibold text-[#000000] lg:text-4xl">
@@ -49,6 +53,7 @@ export default function Category({ items, index }: any) {
   } else {
     return (
       <section
+        id={items.section}
         className={`w-full md:w-6/12 bg-[${items.background}]`}
         key={index}
       >
