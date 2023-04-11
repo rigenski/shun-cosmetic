@@ -26,7 +26,7 @@ const menus = [
   },
   {
     title: "Hubungi Kami",
-    url: "contacts",
+    url: "https://wa.me/62818511744/",
     type: "button",
   },
 ];
@@ -75,7 +75,7 @@ export default function Header() {
                 return (
                   <li className="my-4 md:my-0" key={index}>
                     <Link
-                      href="https://wa.me/6212345"
+                      href={item.url}
                       target="_blank"
                       className="mx-4 my-2 min-w-[140px] rounded bg-[#B4081D] px-4 py-2.5 text-center text-base font-medium text-[#FFFFFF] transition-all hover:translate-y-2 hover:opacity-75 md:my-0"
                     >

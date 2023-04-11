@@ -13,7 +13,7 @@ export default function Start() {
             Silahkan hubungi kami di sini
           </p>
           <Link
-            href="https://wa.me/6212345"
+            href="https://wa.me/62818511744/"
             target="_blank"
             className="mb-2 min-w-[140px] rounded bg-[#B4081D] px-4 py-2.5 text-center text-base font-medium text-[#FFFFFF] transition-all hover:translate-y-2 hover:opacity-75"
           >

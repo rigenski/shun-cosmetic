@@ -4,19 +4,19 @@ import Link from "next/link";
 const menus = [
   {
     title: "Company visit",
-    url: "/",
+    url: "https://wa.me/62818511744/",
   },
   {
     title: "Konsultasi",
-    url: "/",
+    url: "https://wa.me/62818511744/",
   },
   {
     title: "Pertanyaan",
-    url: "/",
+    url: "https://wa.me/62818511744/",
   },
   {
     title: "Hubungi Kami",
-    url: "/",
+    url: "https://wa.me/62818511744/",
   },
 ];
 
@@ -48,6 +48,7 @@ export default function Hero() {
                 >
                   <Link
                     href={item.url}
+                    target="_blank"
                     className="text-[#000000 px-4 py-2 text-center text-sm font-normal md:py-0 lg:text-base"
                   >
                     {item.title}
