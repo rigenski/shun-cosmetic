@@ -13,19 +13,19 @@ const montserrat = Montserrat({
 
 export const metadata = {
   title: "Shun Cosmetic",
-  description: "Pabrik Maklon Buat Merk Kosmetik kamu sendiri",
+  description: "Shun Cosmetic Pabrik Maklon Buat Merk Kosmetik kamu sendiri",
   openGraph: {
     type: "website",
     url: "https://shun.co.id/",
     title: "Shun Cosmetic",
-    description: "Pabrik Maklon Buat Merk Kosmetik kamu sendiri",
+    description: "Shun Cosmetic Pabrik Maklon Buat Merk Kosmetik kamu sendiri",
     images: "https://shun.co.id/images/shun.png",
   },
   twitter: {
     card: "summary_large_image",
     url: "https://shun.co.id/",
     title: "Shun Cosmetic",
-    description: "Pabrik Maklon Buat Merk Kosmetik kamu sendiri",
+    description: "Shun Cosmetic Pabrik Maklon Buat Merk Kosmetik kamu sendiri",
     images: "https://shun.co.id/images/shun.png",
   },
 };

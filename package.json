@@ -6,12 +6,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postbuild": "next-sitemap --config next-sitemap.config.js"
   },
   "dependencies": {
     "clsx": "^1.2.1",
     "google-map-react": "^2.2.0",
     "next": "13.2.4",
+    "next-sitemap": "^4.0.7",
     "nprogress": "^0.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",

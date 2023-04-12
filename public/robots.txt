@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://shun.co.id
+
+# Sitemaps
+Sitemap: https://shun.co.id/sitemap.xml

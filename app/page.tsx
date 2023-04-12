@@ -7,10 +7,8 @@ import Brand from "@/components/sections/home/brand";
 import Certification from "@/components/sections/home/ceritification";
 import Excellence from "@/components/sections/home/excellence";
 import Hero from "@/components/sections/home/hero";
-import Map from "@/components/sections/home/map";
 import Process from "@/components/sections/home/process";
 import Product from "@/components/sections/home/product";
-import Profile from "@/components/sections/home/profile";
 import Start from "@/components/sections/home/start";
 import { useEffect } from "react";
 
@@ -32,8 +30,6 @@ export default function Home() {
         <Process />
         <Product />
         <Certification />
-        <Profile />
-        <Map />
         <Start />
       </main>
       <Footer />

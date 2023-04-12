@@ -95,6 +95,11 @@ export default function Footer() {
             berkonsultasi dengan tim konsultan kami yang berpengalaman.
           </p>
         </div>
+        <div className="mb-4 flex justify-center">
+          <p className="max-w-2xl text-center text-xs font-normal text-[#000000] md:text-sm">
+            © 2023 <b>PT Satu Hati Untuk Negeri</b>. All rights reserved.
+          </p>
+        </div>
       </div>
     </footer>
   );
