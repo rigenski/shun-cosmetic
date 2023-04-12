@@ -20,7 +20,7 @@ export default function Profile() {
         </div>
         <div className="flex items-center justify-center">
           <YouTube
-            videoId="N-ed8jSRokU"
+            videoId="WHpSB7emYF8"
             opts={opts}
             onReady={onPlayerReady}
             className="h-[160px] w-[280px] md:h-[390px] md:w-[640px]"
