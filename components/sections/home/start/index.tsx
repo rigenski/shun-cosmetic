@@ -128,6 +128,7 @@ export default function Start() {
                             : ""
                         }`}
                         onClick={() => handleSendMessage()}
+                        disabled={!name && !brand && !product}
                       >
                         Kirim Pesan
                       </button>
