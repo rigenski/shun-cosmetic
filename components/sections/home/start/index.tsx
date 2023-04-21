@@ -1,5 +1,7 @@
+import { event as eventGoogle } from "@/components/layouts/google-analythic";
+import { event as eventMeta } from "@/components/layouts/meta-pixel";
 import Image from "next/image";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 const products = [
@@ -14,6 +16,16 @@ export default function Start() {
   const [name, setName] = useState("");
   const [brand, setBrand] = useState("");
   const [product, setProduct] = useState("");
+  const navigate = useRouter();
+
+  const handleSendMessage = () => {
+    eventMeta({ name: "Contact" });
+    eventGoogle({ name: "contact" });
+
+    navigate.push(
+      `https://api.whatsapp.com/send?phone=62818511744&text=Nama:%20${name}%0ANama%20Brand:%20${brand}%0AJenis%20produk%20yang%20ingin%20diproduksi:%20${product}`
+    );
+  };
 
   return (
     <section className="w-full bg-[#FEE6BF]">
@@ -109,17 +121,16 @@ export default function Start() {
                       </select>
                     </div>
                     <div className="mt-4 flex justify-end">
-                      <Link
-                        href={`https://api.whatsapp.com/send?phone=62818511744&text=Nama:%20${name}%0ANama%20Brand:%20${brand}%0AJenis%20produk%20yang%20ingin%20diproduksi:%20${product}`}
-                        target="_blank"
+                      <button
                         className={`mb-2 min-w-[140px] rounded bg-[#B4081D] px-4 py-2.5 text-center text-base font-medium text-[#FFFFFF] transition-all hover:translate-y-2 hover:opacity-75 ${
                           !name && !brand && !product
                             ? "cursor-not-allowed opacity-75"
                             : ""
                         }`}
+                        onClick={() => handleSendMessage()}
                       >
                         Kirim Pesan
-                      </Link>
+                      </button>
                     </div>
                   </div>
                 </div>
