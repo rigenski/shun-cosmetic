@@ -118,7 +118,7 @@ export default function Start() {
                             : ""
                         }`}
                       >
-                        Hubungi Kami
+                        Kirim Pesan
                       </Link>
                     </div>
                   </div>
