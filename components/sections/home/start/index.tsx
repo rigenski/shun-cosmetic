@@ -99,8 +99,12 @@ export default function Start() {
                         onChange={(e) => setProduct(e.target.value)}
                       >
                         <option value="">Pilih produk</option>
-                        {products.map((item) => {
-                          return <option value={item}>{item}</option>;
+                        {products.map((item, index) => {
+                          return (
+                            <option value={item} key={index}>
+                              {item}
+                            </option>
+                          );
                         })}
                       </select>
                     </div>
