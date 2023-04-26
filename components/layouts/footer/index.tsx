@@ -18,6 +18,11 @@ const menus = [
     url: "procedures",
     type: "link",
   },
+  {
+    title: "Abous Us",
+    url: "contacts",
+    type: "link",
+  },
 ];
 
 export default function Footer() {
@@ -40,9 +45,8 @@ export default function Footer() {
               <ul>
                 <li className="mb-2">
                   <p className="text-sm font-normal text-[#000000]">
-                    PT Satu Hati Untuk Negeri Komplek Pergudangan dan Industri
-                    Platinum Blok C-2, Jalan Lingkar Timur, Rangkah Kidul,
-                    Sidoarjo, Jawa Timur.
+                    PT Satu Hati Untuk Negeri Kawasan Pergudangan dan Industri
+                    SIRIE Blok E no 16 Desa Rangkah Kidul Sidoarjo.
                   </p>
                 </li>
                 <li className="mb-2">

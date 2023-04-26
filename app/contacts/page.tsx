@@ -1,4 +1,5 @@
 "use client";
+import Footer from "@/components/layouts/footer";
 import Header from "@/components/layouts/header";
 import Contact from "@/components/sections/contacts/contact";
 import Hero from "@/components/sections/contacts/hero";
@@ -17,7 +18,7 @@ const contacts = [
   {
     title: "Hubungi Kami",
     description:
-      "Hubungi kami langsung melalui kontak di bawah atau kunjungi kami di alamat berikut. PT Satu Hati Untuk Negeri Komplek Pergudangan dan Industri Platinum Blok C-2, Jalan Lingkar Timur, Rangkah Kidul, Sidoarjo, Jawa Timur Telp: Whatsapp: +62 818-511-744",
+      "Hubungi kami langsung melalui kontak di bawah atau kunjungi kami di alamat berikut. PT Satu Hati Untuk Negeri Kawasan Pergudangan dan Industri SIRIE Blok E no 16 Desa Rangkah Kidul Sidoarjo. Telp: Whatsapp: +62 818-511-744",
     image: "contact-bg.png",
     background: "#FFEED3",
   },
@@ -39,6 +40,7 @@ export default function Home() {
         <Profile />
         <Map />
       </main>
+      <Footer />
     </>
   );
 }
