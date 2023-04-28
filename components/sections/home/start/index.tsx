@@ -29,7 +29,7 @@ export default function Start() {
 
   return (
     <section className="w-full bg-[#FEE6BF]">
-      <div className="relative">
+      <div className="relative h-[840px] md:h-[480px]">
         <div className="flex flex-wrap">
           <div className="h-[360px] w-full md:h-[480px] md:w-6/12"></div>
           <div className="h-[360px] w-full md:h-[480px] md:w-6/12">
