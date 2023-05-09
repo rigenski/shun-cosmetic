@@ -6,16 +6,16 @@ import "slick-carousel/slick/slick-theme.css";
 
 const heroImages = [
   {
-    image: "hero1-illust.jpeg",
+    image: "hero1-illust.png",
   },
   {
-    image: "hero2-illust.jpeg",
+    image: "hero2-illust.png",
   },
   {
-    image: "hero3-illust.jpeg",
+    image: "hero3-illust.png",
   },
   {
-    image: "hero4-illust.jpeg",
+    image: "hero4-illust.png",
   },
 ];
 
