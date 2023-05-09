@@ -30,7 +30,7 @@ export default function Form() {
     <section
       className="w-full bg-[#FEE6BF] bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: `url('/images/ads/form/form-bg.png')`,
+        backgroundImage: `url('/images/landing/form/form-bg.png')`,
       }}
     >
       <div className="container mx-auto h-full max-w-6xl px-4 py-8 md:py-16">

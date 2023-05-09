@@ -65,7 +65,7 @@ export default function Hero() {
                         <div className="h-full w-full" key={index}>
                           <Image
                             priority
-                            src={`/images/ads/hero/${item.image}`}
+                            src={`/images/landing/hero/${item.image}`}
                             height="1080"
                             width="1080"
                             alt=""

@@ -38,7 +38,7 @@ export default function Testimony() {
                     <div>
                       <Image
                         priority
-                        src="/images/ads/testimony/comma-icon.png"
+                        src="/images/landing/testimony/comma-icon.png"
                         height="480"
                         width="480"
                         alt=""
@@ -70,7 +70,7 @@ export default function Testimony() {
                     <div>
                       <Image
                         priority
-                        src="/images/ads/testimony/comma-icon.png"
+                        src="/images/landing/testimony/comma-icon.png"
                         height="480"
                         width="480"
                         alt=""
@@ -102,7 +102,7 @@ export default function Testimony() {
                     <div>
                       <Image
                         priority
-                        src="/images/ads/testimony/comma-icon.png"
+                        src="/images/landing/testimony/comma-icon.png"
                         height="480"
                         width="480"
                         alt=""

@@ -2,12 +2,12 @@
 import Footer from "@/components/layouts/footer";
 import { event as eventGoogle } from "@/components/layouts/google-analythic";
 import { event as eventMeta } from "@/components/layouts/meta-pixel";
-import Document from "@/components/sections/ads/document";
-import Form from "@/components/sections/ads/form";
-import Hero from "@/components/sections/ads/hero";
-import Question from "@/components/sections/ads/question";
-import Start from "@/components/sections/ads/start";
-import Testimony from "@/components/sections/ads/testimony";
+import Document from "@/components/sections/landing/document";
+import Form from "@/components/sections/landing/form";
+import Hero from "@/components/sections/landing/hero";
+import Question from "@/components/sections/landing/question";
+import Start from "@/components/sections/landing/start";
+import Testimony from "@/components/sections/landing/testimony";
 import { useEffect } from "react";
 
 export default function Home() {

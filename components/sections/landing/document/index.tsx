@@ -23,7 +23,7 @@ export default function Document() {
                   <div className="mb-4">
                     <Image
                       priority
-                      src="/images/ads/document/check-icon.png"
+                      src="/images/landing/document/check-icon.png"
                       height="480"
                       width="480"
                       alt=""
@@ -49,7 +49,7 @@ export default function Document() {
                   <div className="mb-4">
                     <Image
                       priority
-                      src="/images/ads/document/check-icon.png"
+                      src="/images/landing/document/check-icon.png"
                       height="480"
                       width="480"
                       alt=""
