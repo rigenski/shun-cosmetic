@@ -4,3 +4,24 @@
 #nprogress .spinner {
     display: none !important;
 }
+
+.accordion {
+    border: none !important;
+}
+
+.accordion__button {
+    font-weight: 600;
+    background-color: #FEF0E4 !important;
+}
+
+.accordion__item + .accordion__item {
+    border: none !important;
+}
+
+.accordion__panel {
+    background-color: #FEF0E4 !important;
+}
+
+.hero-compare * {
+    transition: none !important;;
+}
