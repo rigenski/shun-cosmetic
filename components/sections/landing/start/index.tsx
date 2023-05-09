@@ -22,7 +22,7 @@ export default function Start() {
               className="h-10 w-auto md:h-12"
             />
           </div>
-          <h2 className="mb-8 max-w-[560px] text-center text-2xl font-medium text-[#000000] lg:text-4xl">
+          <h2 className="mb-8 max-w-[560px] text-center text-2xl font-normal text-[#000000] lg:text-4xl">
             <span className="font-semibold">Mulai dari 5 Juta Rupiah</span> dan
             dalam <span className="font-semibold"> 3 LANGKAH MUDAH</span>
           </h2>

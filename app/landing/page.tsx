@@ -5,6 +5,7 @@ import { event as eventMeta } from "@/components/layouts/meta-pixel";
 import Document from "@/components/sections/landing/document";
 import Form from "@/components/sections/landing/form";
 import Hero from "@/components/sections/landing/hero";
+import Product from "@/components/sections/landing/product";
 import Question from "@/components/sections/landing/question";
 import Start from "@/components/sections/landing/start";
 import Testimony from "@/components/sections/landing/testimony";
@@ -26,8 +27,9 @@ export default function Home() {
         <Hero />
         <Document />x
         <Start />
-        <Form />
+        <Product />
         <Testimony />
+        <Form />
         <Question />
       </main>
       {/* <Footer /> */}

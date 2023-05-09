@@ -33,13 +33,13 @@ export default function Hero() {
     <section className="w-full bg-[#FEF0E4]">
       <div className="relative">
         <div className="flex flex-wrap">
-          <div className="h-[480px] w-full md:h-[720px] md:w-6/12"></div>
-          <div className="h-[480px] w-full md:h-[720px] md:w-6/12"></div>
+          <div className="h-[320px] w-full md:h-[720px] md:w-6/12"></div>
+          <div className="h-[320px] w-full md:h-[720px] md:w-6/12"></div>
         </div>
         <div className="absolute top-0 w-full">
           <div className="container mx-auto max-w-6xl px-4">
             <div className="-mx-4 flex flex-wrap">
-              <div className="h-[480px] w-full px-4 py-8 md:h-[720px] md:w-6/12 md:py-16">
+              <div className="h-[320px] w-full px-4 py-8 md:h-[720px] md:w-6/12 md:py-16">
                 <div className="flex h-full flex-col items-start justify-center">
                   <h1 className="mb-4 text-4xl font-semibold text-[#000000] md:mb-8 lg:text-6xl">
                     Ingin buat SkinCare tapi terkendala modal?
@@ -57,7 +57,7 @@ export default function Hero() {
                   </Link>
                 </div>
               </div>
-              <div className="h-[480px] w-full px-4 py-8 md:h-[720px] md:w-6/12 md:py-16">
+              <div className="h-[320px] w-full px-4 py-8 md:h-[720px] md:w-6/12 md:py-16">
                 <div className="h-full w-full">
                   <Slider {...settings} className="h-full w-full">
                     {heroImages.map((item, index) => {
@@ -69,7 +69,7 @@ export default function Hero() {
                             height="1080"
                             width="1080"
                             alt=""
-                            className="max-h-[400px] w-full object-cover md:max-h-[580px]"
+                            className="max-h-[320px] w-full object-cover md:max-h-[580px]"
                           />
                         </div>
                       );
