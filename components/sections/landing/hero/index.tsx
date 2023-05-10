@@ -17,6 +17,9 @@ const heroImages = [
   {
     image: "hero4-illust.png",
   },
+  {
+    image: "hero5-illust.png",
+  },
 ];
 
 export default function Hero() {
