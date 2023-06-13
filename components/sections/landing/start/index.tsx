@@ -27,7 +27,7 @@ export default function Start() {
             dalam <span className="font-semibold"> 3 LANGKAH MUDAH</span>
           </h2>
           <Link
-            href="https://api.whatsapp.com/send?phone=62818511744&text=Hello%20SHUN%2C%20saya%20tertarik%20untuk%20memulai%20produksi%20maklon.%20Boleh%20tanya-tanya%3F%20%F0%9F%98%80"
+            href="https://api.whatsapp.com/send?phone=6282229801705&text=Hello%20SHUN%2C%20saya%20tertarik%20untuk%20memulai%20produksi%20maklon.%20Boleh%20tanya-tanya%3F%20%F0%9F%98%80"
             target="_blank"
             className="mb-2 min-w-[140px] rounded bg-[#B4081D] px-4 py-2.5 text-center text-base font-medium text-[#FFFFFF] transition-all hover:translate-y-2 hover:opacity-75"
           >

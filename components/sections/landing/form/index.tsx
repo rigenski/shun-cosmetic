@@ -22,7 +22,7 @@ export default function Form() {
     eventGoogle({ name: "contact" });
 
     navigate.push(
-      `https://api.whatsapp.com/send?phone=62818511744&text=Nama:%20${name}%0ANama%20Brand:%20${brand}%0AJenis%20produk%20yang%20ingin%20diproduksi:%20${product}`
+      `https://api.whatsapp.com/send?phone=6282229801705&text=Nama:%20${name}%0ANama%20Brand:%20${brand}%0AJenis%20produk%20yang%20ingin%20diproduksi:%20${product}`
     );
   };
 

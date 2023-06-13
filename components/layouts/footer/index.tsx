@@ -54,11 +54,11 @@ export default function Footer() {
                     <p className="text-sm font-normal text-[#000000]">
                       Whatsapp:{" "}
                       <Link
-                        href="https://api.whatsapp.com/send?phone=62818511744&text=Hello%20SHUN%2C%20saya%20tertarik%20untuk%20memulai%20produksi%20maklon.%20Boleh%20tanya-tanya%3F%20%F0%9F%98%80"
+                        href="https://api.whatsapp.com/send?phone=6282229801705&text=Hello%20SHUN%2C%20saya%20tertarik%20untuk%20memulai%20produksi%20maklon.%20Boleh%20tanya-tanya%3F%20%F0%9F%98%80"
                         target="_blank"
                         className="font-semibold"
                       >
-                        +62818511744
+                        +6282229801705
                       </Link>
                     </p>
                   </div>
